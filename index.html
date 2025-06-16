@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="animated-background">
+
+        <div class="grid-container">
+
+            <div class="grid-line horizontal-line" style="top: 10%"></div>
+            <div class="grid-line horizontal-line" style="top: 30%"></div>
+            <div class="grid-line horizontal-line" style="top: 50%"></div>
+            <div class="grid-line horizontal-line" style="top: 70%"></div>
+            <div class="grid-line horizontal-line" style="top: 90%"></div>
+            
+            <div class="grid-line vertical-line" style="left: 10%"></div>
+            <div class="grid-line vertical-line" style="left: 30%"></div>
+            <div class="grid-line vertical-line" style="left: 50%"></div>
+            <div class="grid-line vertical-line" style="left: 70%"></div>
+            <div class="grid-line vertical-line" style="left: 90%"></div>
+        </div>
+        
+        <div class="digital-circuit"></div>
+        
+        <div class="cyberpunk-grid"></div>
+        
+    </div>
+
+    <nav class="fixed top-0 w-full bg-black bg-opacity-80 z-50 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="futuristic-title text-2xl font-bold">
+                <span class="red-accent">&lt;</span>
+                EMILY
+                <span class="red-accent">/&gt;</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link px-2 py-1">Sobre</a>
+                <a href="#skills" class="nav-link px-2 py-1">Habilidades</a>
+                <a href="#projects" class="nav-link px-2 py-1">Projetos</a>
+                <a href="#contact" class="nav-link px-2 py-1">Contato</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 w-full">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="#about" class="nav-link px-2 py-1">Sobre</a>
+                <a href="#skills" class="nav-link px-2 py-1">Habilidades</a>
+                <a href="#projects" class="nav-link px-2 py-1">Projetos</a>
+                <a href="#contact" class="nav-link px-2 py-1">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+<section id="about" class="min-h-screen flex items-center justify-center pt-20 relative">
+  <div class="container mx-auto px-6 py-20">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0 hero-image">
+        <div class="relative">
+          <div class="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-red-600 to-red-900 flex items-center justify-center glowing">
+            <div class="w-60 h-60 rounded-full bg-black flex items-center justify-center overflow-hidden">
+              <img src="avatar.jpg" alt="Imagem" class="w-full h-full object-cover rounded-full">
+            </div>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-gradient-to-br from-red-600 to-red-900 pulse"></div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10 hero-content">
+                    <h1 class="futuristic-title text-4xl md:text-6xl font-bold mb-4">
+                        <span class="red-accent">Emily</span>
+                    </h1>
+                    <div class="h-1 w-20 bg-red-600 mb-6"></div>
+                    <p class="text-lg mb-6">Olá, me chamo Emily e sou uma <span class="highlight-text">desenvolvedora front-end</span> apaixonada por criar experiências digitais inovadoras e futuristas. Meu objetivo é combinar design e funcionalidade para desenvolver interfaces que impressionam e entregam resultados.</p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-md transition duration-300 futuristic-title">Ver Projetos</a>
+                        <a href="#contact" class="px-6 py-3 border border-red-600 hover:bg-red-600 hover:bg-opacity-20 rounded-md transition duration-300 futuristic-title">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="futuristic-title text-3xl md:text-4xl font-bold mb-16 text-center section-title">
+                <span class="red-accent">&lt;</span>
+                Habilidades
+                <span class="red-accent">/&gt;</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card skill-card rounded-lg p-6 flex flex-col items-center text-center" style="transition-delay: 100ms;">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 452 520" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+                            <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+                            <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+                            <path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"/>
+                            <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"/>
+                        </svg>
+                    </div>
+                    <h3 class="futuristic-title text-xl font-bold mb-3">HTML</h3>
+                    <p>Linguagem de marcação para estruturar o conteúdo web. É a base de qualquer site, definindo elementos como títulos, parágrafos, imagens e links.</p>
+                </div>
+                
+                <div class="card skill-card rounded-lg p-6 flex flex-col items-center text-center" style="transition-delay: 200ms;">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 452 520" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+                            <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52"/>
+                            <path fill="#30a9dc" d="M226 472l149-41 35-394H226"/>
+                            <path fill="#ecedee" d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"/>
+                            <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"/>
+                        </svg>
+                    </div>
+                    <h3 class="futuristic-title text-xl font-bold mb-3">CSS</h3>
+                    <p>Linguagem de estilização que controla a aparência visual dos elementos HTML. Permite criar layouts responsivos, animações e designs personalizados.</p>
+                </div>
+                
+                <div class="card skill-card rounded-lg p-6 flex flex-col items-center text-center" style="transition-delay: 300ms;">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630" width="80" height="80">
+                            <rect width="630" height="630" fill="#f7df1e"/>
+                            <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/>
+                        </svg>
+                    </div>
+                    <h3 class="futuristic-title text-xl font-bold mb-3">JavaScript</h3>
+                    <p>Linguagem de programação que adiciona interatividade às páginas web. Permite criar funcionalidades dinâmicas, manipular dados e responder a eventos do usuário.</p>
+                </div>
+                
+                <div class="card skill-card rounded-lg p-6 flex flex-col items-center text-center" style="transition-delay: 400ms;">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
+                            <circle cx="50" cy="50" r="45" fill="#F9A83A"/>
+                            <circle cx="35" cy="40" r="5" fill="white"/>
+                            <circle cx="65" cy="40" r="5" fill="white"/>
+                            <path d="M35,65 Q50,80 65,65" stroke="white" stroke-width="5" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="futuristic-title text-xl font-bold mb-3">Scratch</h3>
+                    <p>Linguagem de programação visual ideal para iniciantes. Permite criar jogos, animações e histórias interativas através de blocos de código que se encaixam como peças de quebra-cabeça.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="futuristic-title text-3xl md:text-4xl font-bold mb-16 text-center section-title">
+                <span class="red-accent">&lt;</span>
+                Projetos
+                <span class="red-accent">/&gt;</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div class="card project-card rounded-lg overflow-hidden" style="transition-delay: 100ms;">
+                    <div class="p-6 h-full flex flex-col">
+                        <h3 class="futuristic-title text-xl font-bold mb-3">Projeto Monaliza</h3>
+                        <div class="project-image">
+                            <svg viewBox="0 0 600 500" width="100%" height="100%">
+                                <rect width="600" height="500" fill="rgb(123,216,193)"/>
+                                <circle cx="300" cy="300" r="200" fill="rgb(193,94,228)"/>
+                                <circle cx="230" cy="275" r="45" fill="rgb(16,228,16)"/>
+                                <circle cx="380" cy="275" r="45" fill="rgb(16,228,16)"/>
+                                <circle cx="230" cy="275" r="30" fill="black"/>
+                                <circle cx="380" cy="275" r="30" fill="black"/>
+                                <line x1="246" y1="394" x2="372" y2="376" stroke="black" stroke-width="3"/>
+                                <polygon points="303,307 281,344 326,342" fill="yellow"/>
+                                <line x1="339" y1="213" x2="424" y2="213" stroke="black" stroke-width="3"/>
+                                <line x1="172" y1="218" x2="263" y2="216" stroke="black" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="project-details">
+                            <div class="flex space-x-2 mt-4">
+                                <span class="tech-badge">p5.js</span>
+                                <span class="tech-badge">Interativo</span>
+                            </div>
+                            <p class="project-description">Um projeto interativo que cria uma face estilizada que reage ao movimento do mouse, seguindo o cursor com os olhos. Uma demonstração divertida de interatividade e programação criativa.</p>
+                            <div class="project-footer">
+                                <span class="text-sm text-red-400">Arte Digital</span>
+                                <a href="https://editor.p5js.org/00001110321016sp/full/9Gs_BmIcE" target="_blank" class="btn-view">
+                                    Ver Projeto
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card project-card rounded-lg overflow-hidden" style="transition-delay: 200ms;">
+                    <div class="p-6 h-full flex flex-col">
+                        <h3 class="futuristic-title text-xl font-bold mb-3">Corrida de Emojis</h3>
+                        <div class="project-image">
+                            <svg viewBox="0 0 400 400" width="100%" height="100%">
+                                <rect width="400" height="400" fill="#D2EBB5"/>
+                                <text x="0" y="75" font-size="40">🐓</text>
+                                <text x="0" y="150" font-size="40">🦜</text>
+                                <text x="0" y="225" font-size="40">🦚</text>
+                                <text x="0" y="300" font-size="40">🦩</text>
+                                
+                                <rect x="350" y="0" width="10" height="400" fill="white"/>
+                                <rect x="350" y="0" width="10" height="10" fill="black"/>
+                                <rect x="350" y="20" width="10" height="10" fill="black"/>
+                                <rect x="350" y="40" width="10" height="10" fill="black"/>
+                                <rect x="350" y="60" width="10" height="10" fill="black"/>
+                                <rect x="350" y="80" width="10" height="10" fill="black"/>
+                                <rect x="350" y="100" width="10" height="10" fill="black"/>
+                                <rect x="350" y="120" width="10" height="10" fill="black"/>
+                                <rect x="350" y="140" width="10" height="10" fill="black"/>
+                                <rect x="350" y="160" width="10" height="10" fill="black"/>
+                                <rect x="350" y="180" width="10" height="10" fill="black"/>
+                                <rect x="350" y="200" width="10" height="10" fill="black"/>
+                                <rect x="350" y="220" width="10" height="10" fill="black"/>
+                                <rect x="350" y="240" width="10" height="10" fill="black"/>
+                                <rect x="350" y="260" width="10" height="10" fill="black"/>
+                                <rect x="350" y="280" width="10" height="10" fill="black"/>
+                                <rect x="350" y="300" width="10" height="10" fill="black"/>
+                                <rect x="350" y="320" width="10" height="10" fill="black"/>
+                                <rect x="350" y="340" width="10" height="10" fill="black"/>
+                                <rect x="350" y="360" width="10" height="10" fill="black"/>
+                                <rect x="350" y="380" width="10" height="10" fill="black"/>
+                                
+                                <text x="10" y="380" font-size="14" fill="black">Teclas: A, S, D, F</text>
+                            </svg>
+                        </div>
+                        <div class="project-details">
+                            <div class="flex space-x-2 mt-4">
+                                <span class="tech-badge">p5.js</span>
+                                <span class="tech-badge">Game</span>
+                            </div>
+                            <p class="project-description">Um jogo divertido onde emojis de animais competem em uma corrida. Cada jogador usa uma tecla diferente (A, S, D, F) para avançar seu personagem até a linha de chegada.</p>
+                            <div class="project-footer">
+                                <span class="text-sm text-red-400">Jogo Interativo</span>
+                                <a href="https://editor.p5js.org/00001110321016sp/full/2nagmgTe_r" target="_blank" class="btn-view">
+                                    Ver Projeto
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card project-card rounded-lg overflow-hidden" style="transition-delay: 300ms;">
+                    <div class="p-6 h-full flex flex-col">
+                        <h3 class="futuristic-title text-xl font-bold mb-3">Quente e Frio</h3>
+                        <div class="project-image">
+                            <svg viewBox="0 0 400 400" width="100%" height="100%">
+                                <rect width="400" height="400" fill="#ddd"/>
+                                
+                                <circle cx="200" cy="200" r="3" fill="#333"/>
+                                
+                                <circle cx="150" cy="150" r="100" fill="none" stroke="#ff0033" stroke-width="2" opacity="0.7"/>
+                                
+                                <circle cx="150" cy="150" r="8" fill="#ff0033"/>
+                                
+                                <text x="20" y="30" font-size="14" fill="#333">Encontre o ponto escondido!</text>
+                                <text x="20" y="380" font-size="12" fill="#333">O círculo indica a distância até o ponto</text>
+                            </svg>
+                        </div>
+                        <div class="project-details">
+                            <div class="flex space-x-2 mt-4">
+                                <span class="tech-badge">p5.js</span>
+                                <span class="tech-badge">Puzzle</span>
+                            </div>
+                            <p class="project-description">Um jogo de "quente e frio" onde o jogador deve encontrar um ponto escondido na tela. O círculo muda de tamanho conforme a proximidade do ponto, ajudando o jogador a encontrá-lo.</p>
+                            <div class="project-footer">
+                                <span class="text-sm text-red-400">Jogo de Busca</span>
+                                <a href="https://editor.p5js.org/00001110321016sp/full/x4Mc01ynQ" target="_blank" class="btn-view">
+                                    Ver Projeto
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="futuristic-title text-3xl md:text-4xl font-bold mb-16 text-center section-title">
+                <span class="red-accent">&lt;</span>
+                Contato
+                <span class="red-accent">/&gt;</span>
+            </h2>
+            
+            <div class="card rounded-lg p-8 max-w-2xl mx-auto fade-in">
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12">
+                    <a href="https://github.com/emily" target="_blank" class="flex flex-col items-center contact-icon group">
+                        <svg class="w-12 h-12 mb-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="futuristic-title">GitHub</span>
+                    </a>
+                    
+                    <a href="mailto:emily@example.com" class="flex flex-col items-center contact-icon group">
+                        <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="futuristic-title">Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-black bg-opacity-80">
+        <div class="container mx-auto px-6 text-center">
+            <p class="futuristic-title text-sm">
+                &copy; 2025 Emily. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            observer.observe(document.querySelector('.hero-image'));
+            observer.observe(document.querySelector('.hero-content'));
+            
+            document.querySelectorAll('.section-title').forEach(title => {
+                observer.observe(title);
+            });
+            
+            document.querySelectorAll('.section-divider').forEach(divider => {
+                observer.observe(divider);
+            });
+            
+            document.querySelectorAll('.skill-card').forEach(card => {
+                observer.observe(card);
+            });
+            
+            document.querySelectorAll('.project-card').forEach(card => {
+                observer.observe(card);
+            });
+            
+            document.querySelectorAll('.fade-in').forEach(element => {
+                observer.observe(element);
+            });
+            
+            document.querySelectorAll('.horizontal-line, .vertical-line').forEach(line => {
+                observer.observe(line);
+            });
+        });
+        
+        function createParticles() {
+            const particlesContainer = document.querySelector('.animated-background');
+            const numberOfParticles = 50;
+            
+            for (let i = 0; i < numberOfParticles; i++) {
+                const size = Math.random() * 6 + 2;
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.left = `${Math.random() * 100}%`;
+                
+                particle.style.animationDuration = `${Math.random() * 4 + 3}s`;
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        createParticles();
+        
+        document.querySelectorAll('.btn-view').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const projectTitle = this.closest('.project-card').querySelector('h3').textContent;
+                alert(`Redirecionando para o projeto "${projectTitle}"...`);
+            });
+        });
+        
+        document.querySelectorAll('.project-card h3').forEach(title => {
+            title.addEventListener('mouseenter', () => {
+                title.classList.add('glitch-effect');
+                setTimeout(() => {
+                    title.classList.remove('glitch-effect');
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
